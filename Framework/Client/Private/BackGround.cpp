@@ -1,5 +1,6 @@
 #include "stdafx.h"
 #include "..\Public\BackGround.h"
+#include "GameInstance.h"
 
 CBackGround::CBackGround(LPDIRECT3DDEVICE9 pGraphic_Device)
 	: CGameObject(pGraphic_Device)
@@ -21,6 +22,8 @@ HRESULT CBackGround::Initialize_Prototype()
 
 HRESULT CBackGround::Initialize(void* pArg)
 {
+	if (FAILED(SetUp_Components()))
+		return E_FAIL;
 
 	
 	return S_OK;
@@ -33,11 +36,33 @@ void CBackGround::Tick(_float fTimeDelta)
 
 void CBackGround::LateTick(_float fTimeDelta)
 {
-	int a = 10;
+	if (nullptr == m_pRendererCom)
+		return;
+
+	
+	m_pRendererCom->Add_RenderGroup(CRenderer::RENDER_PRIORITY, this);
 }
 
 HRESULT CBackGround::Render()
 {
+	return S_OK;
+}
+
+HRESULT CBackGround::SetUp_Components()
+{
+	CGameInstance*		pGameInstance = CGameInstance::Get_Instance();
+	Safe_AddRef(pGameInstance);
+
+	/* For.Com_Renderer */ 
+	m_pRendererCom = (CRenderer*)pGameInstance->Clone_Component(LEVEL_STATIC, TEXT("Prototype_Component_Renderer"));
+	if (nullptr == m_pRendererCom)
+		return E_FAIL;
+
+	m_pTransformCom = (CTransform*)pGameInstance->Clone_Component(LEVEL_STATIC, TEXT("Prototype_Component_Transform"));
+	if (nullptr == m_pTransformCom)
+		return E_FAIL;
+
+	Safe_Release(pGameInstance);
 	return S_OK;
 }
 
@@ -70,4 +95,7 @@ CGameObject * CBackGround::Clone(void* pArg)
 void CBackGround::Free()
 {
 	__super::Free();
+
+	Safe_Release(m_pRendererCom);
+	Safe_Release(m_pTransformCom);
 }

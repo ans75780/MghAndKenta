@@ -31,8 +31,17 @@
     <Filter Include="02.GameObject\BackGround">
       <UniqueIdentifier>{5bbc74ac-51d4-4b0f-9cbf-b4c01ecfd969}</UniqueIdentifier>
     </Filter>
-    <Filter Include="02.GameObject\Shape">
-      <UniqueIdentifier>{987d105c-2ace-4e92-8ae7-de89a9736b40}</UniqueIdentifier>
+    <Filter Include="02.GameObject\Cube">
+      <UniqueIdentifier>{167852c8-3d6f-4354-addc-05b59dff2827}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Camera">
+      <UniqueIdentifier>{7d88449a-2582-4bc5-9740-99fe9165e46f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\EmptyObject">
+      <UniqueIdentifier>{cf1516b7-507f-4c6a-825e-71600f78ea5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\Human">
+      <UniqueIdentifier>{96fe25ae-422b-4e05-af9a-e6a1ee66ae7e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -69,8 +78,17 @@
     <ClInclude Include="..\public\BackGround.h">
       <Filter>02.GameObject\BackGround</Filter>
     </ClInclude>
-    <ClInclude Include="Cube.h">
-      <Filter>02.GameObject\Shape</Filter>
+    <ClInclude Include="..\Public\Cube.h">
+      <Filter>02.GameObject\Cube</Filter>
+    </ClInclude>
+    <ClInclude Include="FirstPersonCamera.h">
+      <Filter>03.Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="EmptyObject.h">
+      <Filter>02.GameObject\EmptyObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Human.h">
+      <Filter>02.GameObject\Human</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -98,8 +116,17 @@
     <ClCompile Include="..\private\BackGround.cpp">
       <Filter>02.GameObject\BackGround</Filter>
     </ClCompile>
-    <ClCompile Include="Cube.cpp">
-      <Filter>02.GameObject\Shape</Filter>
+    <ClCompile Include="..\Private\Cube.cpp">
+      <Filter>02.GameObject\Cube</Filter>
+    </ClCompile>
+    <ClCompile Include="FirstPersonCamera.cpp">
+      <Filter>03.Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="EmptyObject.cpp">
+      <Filter>02.GameObject\EmptyObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Human.cpp">
+      <Filter>02.GameObject\Human</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

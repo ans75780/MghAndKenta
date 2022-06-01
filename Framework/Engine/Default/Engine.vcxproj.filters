@@ -55,6 +55,15 @@
     <Filter Include="01.Utility\03.Components\Renderer">
       <UniqueIdentifier>{ab7714b5-eee9-4739-98c1-a11b37af4394}</UniqueIdentifier>
     </Filter>
+    <Filter Include="01.Utility\03.Components\Transform">
+      <UniqueIdentifier>{d8ef1803-a443-4f93-b4c6-d4d04ebc8364}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Utility\04.Camera">
+      <UniqueIdentifier>{effb7ba8-7975-4683-a384-c19c1096da15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Utility\04.Camera\Manager">
+      <UniqueIdentifier>{0205ee62-7e57-4bae-b876-2e3f65442f37}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Public\Base.h">
@@ -108,6 +117,15 @@
     <ClInclude Include="..\public\Renderer.h">
       <Filter>01.Utility\03.Components\Renderer</Filter>
     </ClInclude>
+    <ClInclude Include="..\Public\Transform.h">
+      <Filter>01.Utility\03.Components\Transform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Camera_Manager.h">
+      <Filter>01.Utility\04.Camera\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Camera.h">
+      <Filter>01.Utility\04.Camera</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Private\Base.cpp">
@@ -142,6 +160,15 @@
     </ClCompile>
     <ClCompile Include="..\private\Renderer.cpp">
       <Filter>01.Utility\03.Components\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Transform.cpp">
+      <Filter>01.Utility\03.Components\Transform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Camera_Manager.cpp">
+      <Filter>01.Utility\04.Camera\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Camera.cpp">
+      <Filter>01.Utility\04.Camera</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

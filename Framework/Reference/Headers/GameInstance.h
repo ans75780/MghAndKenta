@@ -4,6 +4,7 @@
 #include "Level_Manager.h"
 #include "Object_Manager.h"
 #include "Component_Manager.h"
+#include "Camera_Manager.h"
 /* 1. 게임내에 필요한 객체(매니져등)들을 모아서 보관한다. */
 /* 2. 클라이언트 개발자가 접근하기좋은 루트를 제공해준다. 나. */
 /* 3. 진짜 필요한 함수만 클라잉언트개발자에게 ㅇ오픈해주낟. */
@@ -32,15 +33,16 @@ public: /* For.Level_Manager */
 
 public: /* For.Object_Manager */
 	HRESULT Add_Prototype(const _tchar* pPrototypeTag, class CGameObject* pPrototype);
-
 	HRESULT Add_GameObject(_uint iLevelIndex, const _tchar* pLayerTag, const _tchar* pPrototypeTag, void* pArg = nullptr);
 
-
-
-	/*For. Component_Manager*/
-	//각각의 오브젝트들이 이니셜라이즈에서 호출을 할 것이기 때문에 Find_Component를 가지고 있는다.
-	HRESULT Add_Prototype(_uint iLevelIndex, const _tchar * pPrototypeTag, class CComponent* pPrototype);
-	class CComponent* Find_Components(_uint iLevelIndex, const _tchar * pPrototypeTag);
+public: /* For.Component_Mananger */
+	HRESULT Add_Prototype(_uint iLevelIndex, const _tchar* pPrototypeTag, class CComponent* pPrototype);
+	class CComponent* Clone_Component(_uint iLevelIndex, const _tchar* pPrototypeTag, void* pArg = nullptr);
+public: /* For. Camera_Manager */
+	HRESULT Add_Prototype(const _tchar * pPrototypeTag, class CCamera* pPrototype);
+	class CCamera* Clone_Camera(const _tchar * pPrototypeTag, void* pArg = nullptr);
+	class CCamera* Get_MainCamera();
+	HRESULT			Set_MainCamera(class CCamera* _pCamera);
 
 
 private:
@@ -48,6 +50,7 @@ private:
 	CLevel_Manager*					m_pLevel_Manager = nullptr;
 	CObject_Manager*				m_pObject_Manager = nullptr;
 	CComponent_Manager*				m_pComponent_Manager = nullptr;
+	CCamera_Manager*				m_pCamera_Manager = nullptr;
 
 public:
 	static void Release_Engine();

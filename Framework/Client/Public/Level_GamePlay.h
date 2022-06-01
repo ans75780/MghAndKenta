@@ -16,6 +16,10 @@ public:
 	virtual void Tick(_float TimeDelta);
 	virtual HRESULT Render();
 
+private:
+	HRESULT Ready_Layer_Object(const _tchar* pLayerTag);
+
+
 public:
 	static CLevel_GamePlay* Create(LPDIRECT3DDEVICE9 pGraphic_Device);
 	virtual void Free() override;

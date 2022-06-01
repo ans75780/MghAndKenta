@@ -1,0 +1,12 @@
+﻿  Human.cpp
+C:\Users\Mgh\Desktop\8일차\Framework\Reference\Headers\Renderer.h(30,30): warning C4251: 'Engine::CRenderer::m_RenderObjects': class 'std::list<Engine::CGameObject *,std::allocator<Engine::CGameObject *>>'에서는 class 'Engine::CRenderer'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+C:\Users\Mgh\Desktop\8일차\Framework\Reference\Headers\Renderer.h(30): message : 'std::list<Engine::CGameObject *,std::allocator<Engine::CGameObject *>>' 선언을 참조하십시오.
+C:\Users\Mgh\Desktop\8일차\Framework\Reference\Headers\Transform.h(29,10): warning C4251: 'Engine::CTransform::m_vPosition': struct 'D3DXVECTOR3'에서는 class 'Engine::CTransform'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3dx9math.h(162): message : 'D3DXVECTOR3' 선언을 참조하십시오.
+C:\Users\Mgh\Desktop\8일차\Framework\Reference\Headers\Transform.h(30,10): warning C4251: 'Engine::CTransform::m_vAngle': struct 'D3DXVECTOR3'에서는 class 'Engine::CTransform'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3dx9math.h(162): message : 'D3DXVECTOR3' 선언을 참조하십시오.
+C:\Users\Mgh\Desktop\8일차\Framework\Reference\Headers\Transform.h(31,10): warning C4251: 'Engine::CTransform::m_vScale': struct 'D3DXVECTOR3'에서는 class 'Engine::CTransform'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3dx9math.h(162): message : 'D3DXVECTOR3' 선언을 참조하십시오.
+C:\Users\Mgh\Desktop\8일차\Framework\Reference\Headers\Transform.h(33,12): warning C4251: 'Engine::CTransform::m_matWorld': struct 'D3DXMATRIX'에서는 class 'Engine::CTransform'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\d3dx9math.h(312): message : 'D3DXMATRIX' 선언을 참조하십시오.
+  Client.vcxproj -> C:\Users\Mgh\Desktop\8일차\Framework\Client\Bin\Client.exe
