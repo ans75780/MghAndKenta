@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "..\Public\Level_GamePlay.h"
 #include "GameInstance.h"
+#include "Level_Loading.h"
 
 CLevel_GamePlay::CLevel_GamePlay(LPDIRECT3DDEVICE9 pGraphic_Device)
 	: CLevel(pGraphic_Device)
@@ -12,8 +13,7 @@ HRESULT CLevel_GamePlay::Initialize()
 {
 	if (FAILED(__super::Initialize()))
 		return E_FAIL;
-
-	if (FAILED(Ready_Layer_Object(TEXT("Layer_Object"))))
+	if (FAILED(Ready_Layer_Models(TEXT("Layer_Model"))))
 		return E_FAIL;
 	return S_OK;
 }
@@ -34,20 +34,20 @@ HRESULT CLevel_GamePlay::Render()
 	return S_OK;
 }
 
-HRESULT CLevel_GamePlay::Ready_Layer_Object(const _tchar* pLayerTag)
+HRESULT CLevel_GamePlay::Ready_Layer_Models(const _tchar* pLayerTag)
 {
 	CGameInstance* pGameInstance = CGameInstance::Get_Instance();
 	Safe_AddRef(pGameInstance);
 
 	/* For.BackGround */
-	if (FAILED(pGameInstance->Add_GameObject(LEVEL_GAMEPLAY, pLayerTag, TEXT("Prototype_GameObject_Cube"))))
-		return E_FAIL;
-	if (FAILED(pGameInstance->Add_GameObject(LEVEL_GAMEPLAY, pLayerTag, TEXT("Prototype_GameObject_EmptyObject"))))
+	//if (FAILED(pGameInstance->Add_GameObject(LEVEL_GAMEPLAY, pLayerTag, TEXT("Prototype_GameObject_Cube"))))
+	//	return E_FAIL;
+
+	if (FAILED(pGameInstance->Add_GameObject(LEVEL_GAMEPLAY, pLayerTag, TEXT("Prototype_GameObject_Human"))))
 		return E_FAIL;
 
 	Safe_Release(pGameInstance);
 }
-
 
 CLevel_GamePlay * CLevel_GamePlay::Create(LPDIRECT3DDEVICE9 pGraphic_Device)
 {

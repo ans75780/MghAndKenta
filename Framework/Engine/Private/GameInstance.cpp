@@ -8,15 +8,11 @@ CGameInstance::CGameInstance()
 	, m_pLevel_Manager(CLevel_Manager::Get_Instance())
 	, m_pObject_Manager(CObject_Manager::Get_Instance())
 	, m_pComponent_Manager(CComponent_Manager::Get_Instance())
-	, m_pCamera_Manager(CCamera_Manager::Get_Instance())
-
 {
 	Safe_AddRef(m_pComponent_Manager);
 	Safe_AddRef(m_pObject_Manager);
 	Safe_AddRef(m_pLevel_Manager);
 	Safe_AddRef(m_pGraphic_Device);
-	Safe_AddRef(m_pCamera_Manager);
-
 }
 
 HRESULT CGameInstance::Initialize_Engine(_uint iNumLevels, const GRAPHICDESC& GraphicDesc, LPDIRECT3DDEVICE9* ppOut)
@@ -119,6 +115,7 @@ HRESULT CGameInstance::Add_GameObject(_uint iLevelIndex, const _tchar * pLayerTa
 }
 
 
+
 HRESULT CGameInstance::Add_Prototype(_uint iLevelIndex, const _tchar * pPrototypeTag, CComponent * pPrototype)
 {
 	if (nullptr == m_pComponent_Manager)
@@ -136,39 +133,6 @@ CComponent * CGameInstance::Clone_Component(_uint iLevelIndex, const _tchar * pP
 	return m_pComponent_Manager->Clone_Component(iLevelIndex, pPrototypeTag, pArg);
 }
 
-HRESULT CGameInstance::Add_Prototype(const _tchar* pPrototypeTag, CCamera* pPrototype)
-{
-	if (nullptr == m_pCamera_Manager)
-		return E_FAIL;
-
-	return m_pCamera_Manager->Add_Prototype(pPrototypeTag, pPrototype);
-}
-
-CCamera* CGameInstance::Clone_Camera(const _tchar* pPrototypeTag, void* pArg)
-{
-	if (nullptr == m_pCamera_Manager)
-		return nullptr;
-
-	return m_pCamera_Manager->Clone_Camera(pPrototypeTag, pArg);
-}
-
-CCamera* CGameInstance::Get_MainCamera()
-{
-	if (nullptr == m_pCamera_Manager)
-		return nullptr;
-	return m_pCamera_Manager->Get_MainCamera();
-}
-
-HRESULT CGameInstance::Set_MainCamera(CCamera* _pCamera)
-{
-	if (nullptr == m_pCamera_Manager || nullptr == _pCamera)
-		return E_FAIL;
-	
-	m_pCamera_Manager->Set_MainCamera(_pCamera);
-
-	return S_OK;
-}
-
 void CGameInstance::Release_Engine()
 {
 	CGameInstance::Get_Instance()->Destroy_Instance();		
@@ -181,7 +145,6 @@ void CGameInstance::Release_Engine()
 
 	CGraphic_Device::Get_Instance()->Destroy_Instance();
 
-	CCamera_Manager::Get_Instance()->Destroy_Instance();
 }
 
 void CGameInstance::Free()
@@ -190,5 +153,4 @@ void CGameInstance::Free()
 	Safe_Release(m_pObject_Manager);
 	Safe_Release(m_pLevel_Manager);
 	Safe_Release(m_pGraphic_Device);
-	Safe_Release(m_pCamera_Manager);
 }

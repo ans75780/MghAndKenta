@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "..\Public\Level_Logo.h"
 #include "GameInstance.h"
-#include "LEvel_Loading.h"
+#include "Level_Loading.h"
 
 
 CLevel_Logo::CLevel_Logo(LPDIRECT3DDEVICE9 pGraphic_Device)

@@ -1,45 +1,42 @@
-#include "Camera.h"
-#include "GameInstance.h"
+#include "..\Public\Camera.h"
+#include "GameObject.h"
+
+CCamera* CCamera::g_pMainCamera = nullptr;
+
 CCamera::CCamera(LPDIRECT3DDEVICE9 pGraphic_Device)
-	:m_pGraphic_Device(pGraphic_Device)
+	: CComponent(pGraphic_Device)
 {
-	Safe_AddRef(m_pGraphic_Device);
 }
 
 CCamera::CCamera(const CCamera& Prototype)
-	: m_pGraphic_Device(Prototype.m_pGraphic_Device)
+	:CComponent(Prototype)
 {
-	Safe_AddRef(m_pGraphic_Device);
 }
+
 
 HRESULT CCamera::Initialize_Prototype()
 {
 	return S_OK;
 }
 
-HRESULT CCamera::Initialize(void* pArg)
+HRESULT CCamera::Initialize(void * pArg)
 {
 	return S_OK;
 }
 
-void CCamera::Set_MainCamera()
+CCamera* CCamera::Get_MainCamera()
 {
-	CGameInstance* pGameInstance = CGameInstance::Get_Instance();
-	Safe_AddRef(pGameInstance);
-
-	pGameInstance->Set_MainCamera(this);
-	
-	Safe_Release(pGameInstance);
-
+	return g_pMainCamera;
 }
 
-CTransform* CCamera::Get_Transform()
+HRESULT CCamera::Set_MainCamera(CCamera* _pCamera)
 {
-	return m_pTransform;
-}
+	g_pMainCamera = _pCamera;
 
+	return S_OK;
+}
 
 void CCamera::Free()
 {
-	Safe_Release(m_pGraphic_Device);
+	__super::Free();
 }

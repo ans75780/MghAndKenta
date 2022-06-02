@@ -5,6 +5,9 @@
 /* 컴포넌트들의 원형을 가지고 있는다. */
 #include "Renderer.h"
 #include "Transform.h"
+#include "VIBuffer_Cube.h"
+#include "FirstPersonCamera.h"
+#include "ThirdPersonCamera.h"
 
 BEGIN(Engine)
 

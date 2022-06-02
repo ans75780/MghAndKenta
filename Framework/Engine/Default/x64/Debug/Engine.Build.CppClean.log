@@ -1,31 +1,32 @@
-c:\users\mgh\desktop\8일차\framework\engine\default\x64\debug\vc143.pdb
-c:\users\mgh\desktop\8일차\framework\engine\default\x64\debug\vc143.idb
-c:\users\mgh\desktop\8일차\framework\engine\default\x64\debug\camera.obj
-c:\users\mgh\desktop\8일차\framework\engine\default\x64\debug\transform.obj
-c:\users\mgh\desktop\8일차\framework\engine\default\x64\debug\renderer.obj
-c:\users\mgh\desktop\8일차\framework\engine\default\x64\debug\object_manager.obj
-c:\users\mgh\desktop\8일차\framework\engine\default\x64\debug\level_manager.obj
-c:\users\mgh\desktop\8일차\framework\engine\default\x64\debug\level.obj
-c:\users\mgh\desktop\8일차\framework\engine\default\x64\debug\layer.obj
-c:\users\mgh\desktop\8일차\framework\engine\default\x64\debug\graphic_device.obj
-c:\users\mgh\desktop\8일차\framework\engine\default\x64\debug\gameobject.obj
-c:\users\mgh\desktop\8일차\framework\engine\default\x64\debug\gameinstance.obj
-c:\users\mgh\desktop\8일차\framework\engine\default\x64\debug\component_manager.obj
-c:\users\mgh\desktop\8일차\framework\engine\default\x64\debug\component.obj
-c:\users\mgh\desktop\8일차\framework\engine\default\x64\debug\camera_manager.obj
-c:\users\mgh\desktop\8일차\framework\engine\default\x64\debug\base.obj
-c:\users\82103\desktop\8일차\framework\engine\bin\engine.lib
-c:\users\82103\desktop\8일차\framework\engine\bin\engine.exp
-c:\users\mgh\desktop\8일차\framework\engine\bin\engine.lib
-c:\users\mgh\desktop\8일차\framework\engine\bin\engine.exp
-c:\users\mgh\desktop\8일차\framework\engine\default\x64\debug\engine.ilk
-c:\users\mgh\desktop\8일차\framework\engine\bin\engine.dll
-c:\users\mgh\desktop\8일차\framework\engine\bin\engine.pdb
-c:\users\mgh\desktop\8일차\framework\engine\default\x64\debug\transform.obj.enc
-c:\users\mgh\desktop\8일차\framework\engine\default\x64\debug\engine.tlog\cl.command.1.tlog
-c:\users\mgh\desktop\8일차\framework\engine\default\x64\debug\engine.tlog\cl.read.1.tlog
-c:\users\mgh\desktop\8일차\framework\engine\default\x64\debug\engine.tlog\cl.write.1.tlog
-c:\users\mgh\desktop\8일차\framework\engine\default\x64\debug\engine.tlog\engine.write.1u.tlog
-c:\users\mgh\desktop\8일차\framework\engine\default\x64\debug\engine.tlog\link.command.1.tlog
-c:\users\mgh\desktop\8일차\framework\engine\default\x64\debug\engine.tlog\link.read.1.tlog
-c:\users\mgh\desktop\8일차\framework\engine\default\x64\debug\engine.tlog\link.write.1.tlog
+c:\users\mgh\desktop\팔 붕붕이\framework\engine\default\x64\debug\vc143.pdb
+c:\users\mgh\desktop\팔 붕붕이\framework\engine\default\x64\debug\vc143.idb
+c:\users\mgh\desktop\팔 붕붕이\framework\engine\default\x64\debug\vibuffer_rect.obj
+c:\users\mgh\desktop\팔 붕붕이\framework\engine\default\x64\debug\vibuffer_cube.obj
+c:\users\mgh\desktop\팔 붕붕이\framework\engine\default\x64\debug\vibuffer.obj
+c:\users\mgh\desktop\팔 붕붕이\framework\engine\default\x64\debug\transform.obj
+c:\users\mgh\desktop\팔 붕붕이\framework\engine\default\x64\debug\thirdpersoncamera.obj
+c:\users\mgh\desktop\팔 붕붕이\framework\engine\default\x64\debug\renderer.obj
+c:\users\mgh\desktop\팔 붕붕이\framework\engine\default\x64\debug\object_manager.obj
+c:\users\mgh\desktop\팔 붕붕이\framework\engine\default\x64\debug\level_manager.obj
+c:\users\mgh\desktop\팔 붕붕이\framework\engine\default\x64\debug\level.obj
+c:\users\mgh\desktop\팔 붕붕이\framework\engine\default\x64\debug\layer.obj
+c:\users\mgh\desktop\팔 붕붕이\framework\engine\default\x64\debug\graphic_device.obj
+c:\users\mgh\desktop\팔 붕붕이\framework\engine\default\x64\debug\gameobject.obj
+c:\users\mgh\desktop\팔 붕붕이\framework\engine\default\x64\debug\gameinstance.obj
+c:\users\mgh\desktop\팔 붕붕이\framework\engine\default\x64\debug\firstpersoncamera.obj
+c:\users\mgh\desktop\팔 붕붕이\framework\engine\default\x64\debug\component_manager.obj
+c:\users\mgh\desktop\팔 붕붕이\framework\engine\default\x64\debug\component.obj
+c:\users\mgh\desktop\팔 붕붕이\framework\engine\default\x64\debug\camera.obj
+c:\users\mgh\desktop\팔 붕붕이\framework\engine\default\x64\debug\base.obj
+c:\users\mgh\desktop\팔 붕붕이\framework\engine\bin\engine.lib
+c:\users\mgh\desktop\팔 붕붕이\framework\engine\bin\engine.exp
+c:\users\mgh\desktop\팔 붕붕이\framework\engine\default\x64\debug\engine.ilk
+c:\users\mgh\desktop\팔 붕붕이\framework\engine\bin\engine.dll
+c:\users\mgh\desktop\팔 붕붕이\framework\engine\bin\engine.pdb
+c:\users\mgh\desktop\팔 붕붕이\framework\engine\default\x64\debug\engine.tlog\cl.command.1.tlog
+c:\users\mgh\desktop\팔 붕붕이\framework\engine\default\x64\debug\engine.tlog\cl.read.1.tlog
+c:\users\mgh\desktop\팔 붕붕이\framework\engine\default\x64\debug\engine.tlog\cl.write.1.tlog
+c:\users\mgh\desktop\팔 붕붕이\framework\engine\default\x64\debug\engine.tlog\engine.write.1u.tlog
+c:\users\mgh\desktop\팔 붕붕이\framework\engine\default\x64\debug\engine.tlog\link.command.1.tlog
+c:\users\mgh\desktop\팔 붕붕이\framework\engine\default\x64\debug\engine.tlog\link.read.1.tlog
+c:\users\mgh\desktop\팔 붕붕이\framework\engine\default\x64\debug\engine.tlog\link.write.1.tlog

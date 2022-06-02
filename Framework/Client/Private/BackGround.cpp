@@ -58,9 +58,8 @@ HRESULT CBackGround::SetUp_Components()
 	if (nullptr == m_pRendererCom)
 		return E_FAIL;
 
-	m_pTransformCom = (CTransform*)pGameInstance->Clone_Component(LEVEL_STATIC, TEXT("Prototype_Component_Transform"));
-	if (nullptr == m_pTransformCom)
-		return E_FAIL;
+
+
 
 	Safe_Release(pGameInstance);
 	return S_OK;
@@ -97,5 +96,4 @@ void CBackGround::Free()
 	__super::Free();
 
 	Safe_Release(m_pRendererCom);
-	Safe_Release(m_pTransformCom);
 }

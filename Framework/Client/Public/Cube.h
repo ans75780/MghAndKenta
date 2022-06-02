@@ -5,23 +5,13 @@
 
 BEGIN(Engine)
 class CRenderer;
+class CVIBuffer_Cube;
 class CTransform;
-class CCamera;
+class CFirstPersonCamera;
+class CThirdPersonCamera;
 END
-struct Vertex
-{
-	_float x, y, z;
 
-	Vertex(_float _x, _float _y, _float _z)
-		:x(_x),y(_y),z(_z)
-	{
-
-	}
-
-};
 BEGIN(Client)
-
-
 
 class CCube final : public CGameObject
 {
@@ -36,20 +26,26 @@ public:
 	virtual void Tick(_float fTimeDelta) override;
 	virtual void LateTick(_float fTimeDelta) override;
 	virtual HRESULT Render() override;
-
+public:
+	void			Set_Parent(CCube* _pParent);
+	CCube*			Get_Parent();
+	void			Add_Child(CCube* _pChild);
+	CTransform*		Get_Transform();
 private:
-	CRenderer* m_pRendererCom = nullptr;
-	CTransform* m_pTransformCom = nullptr;
-	CCamera*	m_pCamera = nullptr;
-	LPDIRECT3DVERTEXBUFFER9		m_pVertexBuffer = nullptr;
-	LPDIRECT3DINDEXBUFFER9		m_pIndexBuffer = nullptr;
+	CRenderer*				m_pRendererCom = nullptr;
+	CTransform*				m_pTransformCom = nullptr;
+	CVIBuffer_Cube*			m_pVIBufferCubeCom = nullptr;
 
 private: /* 현재 객체에게 필요한 컴포넌트를 복제해온다. */
 	HRESULT SetUp_Components();
-	HRESULT	SetUp_DrawData();
+
 public:
 	static CCube* Create(LPDIRECT3DDEVICE9 pGraphic_Device);
 	virtual CGameObject* Clone(void* pArg) override;
 	virtual void Free() override;
+private:
+	CCube* m_pParent = nullptr;
+	list<CCube*> m_ChildList;
 };
+
 END

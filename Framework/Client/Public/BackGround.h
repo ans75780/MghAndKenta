@@ -5,7 +5,6 @@
 
 BEGIN(Engine)
 class CRenderer;
-class CTransform;
 END
 
 BEGIN(Client)
@@ -26,7 +25,6 @@ public:
 
 private:
 	CRenderer*				m_pRendererCom = nullptr;
-	CTransform*				m_pTransformCom = nullptr;
 
 private: /* 현재 객체에게 필요한 컴포넌트를 복제해온다. */
 	HRESULT SetUp_Components();

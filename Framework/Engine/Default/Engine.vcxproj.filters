@@ -49,20 +49,35 @@
     <Filter Include="01.Utility\03.Components">
       <UniqueIdentifier>{7a250bc6-4593-4a9d-b563-84d152f89dd8}</UniqueIdentifier>
     </Filter>
-    <Filter Include="01.Utility\03.Components\Manager">
-      <UniqueIdentifier>{6b2c4878-0377-41fa-aa3d-e41e67577b24}</UniqueIdentifier>
-    </Filter>
     <Filter Include="01.Utility\03.Components\Renderer">
       <UniqueIdentifier>{ab7714b5-eee9-4739-98c1-a11b37af4394}</UniqueIdentifier>
     </Filter>
+    <Filter Include="01.Utility\03.Components\Model">
+      <UniqueIdentifier>{a4b747fe-ace1-457e-8fc3-cbd1b6f250b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Utility\03.Components\Manager">
+      <UniqueIdentifier>{6b2c4878-0377-41fa-aa3d-e41e67577b24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Utility\03.Components\Model\VIBuffer">
+      <UniqueIdentifier>{14e1e29b-5f0f-45a6-b390-0732db21f5cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Utility\03.Components\Model\Rect">
+      <UniqueIdentifier>{9bbfb4c2-f50e-4feb-b393-a311f3b0b406}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Utility\03.Components\Model\Cube">
+      <UniqueIdentifier>{87a4768b-bf20-47df-bce1-7ba7868656f1}</UniqueIdentifier>
+    </Filter>
     <Filter Include="01.Utility\03.Components\Transform">
-      <UniqueIdentifier>{d8ef1803-a443-4f93-b4c6-d4d04ebc8364}</UniqueIdentifier>
+      <UniqueIdentifier>{6790e207-1d43-4d97-acd1-959d6dbd1c87}</UniqueIdentifier>
     </Filter>
-    <Filter Include="01.Utility\04.Camera">
-      <UniqueIdentifier>{effb7ba8-7975-4683-a384-c19c1096da15}</UniqueIdentifier>
+    <Filter Include="01.Utility\03.Components\Camera">
+      <UniqueIdentifier>{ff317ad9-7484-41b0-a8b5-425b44a5bb1d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="01.Utility\04.Camera\Manager">
-      <UniqueIdentifier>{0205ee62-7e57-4bae-b876-2e3f65442f37}</UniqueIdentifier>
+    <Filter Include="01.Utility\03.Components\Camera\FirstPersonCamera">
+      <UniqueIdentifier>{f86d3874-b15b-4037-8624-2532a9d3a72c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Utility\03.Components\Camera\ThirdPersonCamera">
+      <UniqueIdentifier>{3619d344-6634-4fb4-a692-7cbb0e378f60}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -117,14 +132,26 @@
     <ClInclude Include="..\public\Renderer.h">
       <Filter>01.Utility\03.Components\Renderer</Filter>
     </ClInclude>
+    <ClInclude Include="..\public\VIBuffer.h">
+      <Filter>01.Utility\03.Components\Model\VIBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\VIBuffer_Rect.h">
+      <Filter>01.Utility\03.Components\Model\Rect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\VIBuffer_Cube.h">
+      <Filter>01.Utility\03.Components\Model\Cube</Filter>
+    </ClInclude>
     <ClInclude Include="..\Public\Transform.h">
       <Filter>01.Utility\03.Components\Transform</Filter>
     </ClInclude>
-    <ClInclude Include="..\Public\Camera_Manager.h">
-      <Filter>01.Utility\04.Camera\Manager</Filter>
-    </ClInclude>
     <ClInclude Include="..\Public\Camera.h">
-      <Filter>01.Utility\04.Camera</Filter>
+      <Filter>01.Utility\03.Components\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\FirstPersonCamera.h">
+      <Filter>01.Utility\03.Components\Camera\FirstPersonCamera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\ThirdPersonCamera.h">
+      <Filter>01.Utility\03.Components\Camera\ThirdPersonCamera</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -161,14 +188,26 @@
     <ClCompile Include="..\private\Renderer.cpp">
       <Filter>01.Utility\03.Components\Renderer</Filter>
     </ClCompile>
+    <ClCompile Include="..\private\VIBuffer.cpp">
+      <Filter>01.Utility\03.Components\Model\VIBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\VIBuffer_Rect.cpp">
+      <Filter>01.Utility\03.Components\Model\Rect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\VIBuffer_Cube.cpp">
+      <Filter>01.Utility\03.Components\Model\Cube</Filter>
+    </ClCompile>
     <ClCompile Include="..\Private\Transform.cpp">
       <Filter>01.Utility\03.Components\Transform</Filter>
     </ClCompile>
-    <ClCompile Include="..\Private\Camera_Manager.cpp">
-      <Filter>01.Utility\04.Camera\Manager</Filter>
-    </ClCompile>
     <ClCompile Include="..\Private\Camera.cpp">
-      <Filter>01.Utility\04.Camera</Filter>
+      <Filter>01.Utility\03.Components\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\FirstPersonCamera.cpp">
+      <Filter>01.Utility\03.Components\Camera\FirstPersonCamera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\ThirdPersonCamera.cpp">
+      <Filter>01.Utility\03.Components\Camera\ThirdPersonCamera</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

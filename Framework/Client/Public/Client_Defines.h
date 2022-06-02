@@ -8,10 +8,6 @@ namespace Client
 	enum LEVEL { LEVEL_STATIC, LEVEL_LOADING, LEVEL_LOGO, LEVEL_GAMEPLAY, LEVEL_END };
 }
 
-
-
-#define CUSTOM_FVF (D3DFVF_XYZ)
-
 extern HWND g_hWnd;
 
 using namespace Client;

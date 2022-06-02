@@ -32,16 +32,10 @@
       <UniqueIdentifier>{5bbc74ac-51d4-4b0f-9cbf-b4c01ecfd969}</UniqueIdentifier>
     </Filter>
     <Filter Include="02.GameObject\Cube">
-      <UniqueIdentifier>{167852c8-3d6f-4354-addc-05b59dff2827}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="03.Camera">
-      <UniqueIdentifier>{7d88449a-2582-4bc5-9740-99fe9165e46f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="02.GameObject\EmptyObject">
-      <UniqueIdentifier>{cf1516b7-507f-4c6a-825e-71600f78ea5f}</UniqueIdentifier>
+      <UniqueIdentifier>{06c22a5e-4a57-45a5-bc6f-2d32c128a13a}</UniqueIdentifier>
     </Filter>
     <Filter Include="02.GameObject\Human">
-      <UniqueIdentifier>{96fe25ae-422b-4e05-af9a-e6a1ee66ae7e}</UniqueIdentifier>
+      <UniqueIdentifier>{e7dc6c2d-2551-44fa-98f9-e5755f630615}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -81,13 +75,7 @@
     <ClInclude Include="..\Public\Cube.h">
       <Filter>02.GameObject\Cube</Filter>
     </ClInclude>
-    <ClInclude Include="FirstPersonCamera.h">
-      <Filter>03.Camera</Filter>
-    </ClInclude>
-    <ClInclude Include="EmptyObject.h">
-      <Filter>02.GameObject\EmptyObject</Filter>
-    </ClInclude>
-    <ClInclude Include="Human.h">
+    <ClInclude Include="..\Public\Human.h">
       <Filter>02.GameObject\Human</Filter>
     </ClInclude>
   </ItemGroup>
@@ -119,13 +107,7 @@
     <ClCompile Include="..\Private\Cube.cpp">
       <Filter>02.GameObject\Cube</Filter>
     </ClCompile>
-    <ClCompile Include="FirstPersonCamera.cpp">
-      <Filter>03.Camera</Filter>
-    </ClCompile>
-    <ClCompile Include="EmptyObject.cpp">
-      <Filter>02.GameObject\EmptyObject</Filter>
-    </ClCompile>
-    <ClCompile Include="Human.cpp">
+    <ClCompile Include="..\Private\Human.cpp">
       <Filter>02.GameObject\Human</Filter>
     </ClCompile>
   </ItemGroup>
